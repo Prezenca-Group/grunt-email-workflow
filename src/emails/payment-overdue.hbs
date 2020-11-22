@@ -1,0 +1,46 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.mailgun.com"><img src="../src/img/logo.png" height="30" alt="Mailgun"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      {{> notice type='danger' text='To je opomnik, da je rok za vaše plačilo za rezervacijo potekel.' }}<br/>
+
+      <table>
+        <tr>
+          <td>
+            <p>Spoštovani / Spoštovana Anže Klančar,</p>
+            <p>to je opomnik, da je rok za vaše plačilo za rezervacijo v Zell am See Appartements Ski Opening, Zell am See - Ski Opening, Ski opening potekel. Rok za plačilo je bil sreda, 11 september 2019 za znesek 480.90 EUR.</p>
+            <p>Če želite ohraniti svojo rezervacijo, morate znesek nakazati v najkrajšem možnem času. Če tega ne boste storili, bo vaša rezervacija preklicana.</p>
+            <p>
+              <b>Strošek odpovedi:</b><br/>
+              od nedelja, 1 december 2019 do četrtek, 5 december 2019: EUR 1603.00
+            </p>
+            <p>Hvala za razumevanje.</p>
+            <p>Hvala za izkazano zaupanje in lep pozdrav,<br/>Team MountVacation</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>{{> signature }}</p>
+      </td>
+    </tr>
+  </table>
+</div>

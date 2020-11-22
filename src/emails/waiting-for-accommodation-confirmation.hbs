@@ -1,0 +1,46 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.mailgun.com"><img src="../src/img/logo.png" height="30" alt="Mailgun"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      {{> notice type='info' text='Za dokončno potrditev rezervacije moramo počakati na potrditev lastnikov namestitve.' }}<br/>
+
+      <table>
+        <tr>
+          <td>
+            <p>Spoštovani / Spoštovana Anže Klančar,</p>
+            <p>Obveščamo, da smo vašo rezervacijo sprejeli in jo posredovali (v) Hotel MorgenZeit, Maria Alm, Austria.</p>
+            <p>Za dokončno potrditev moramo počakati na potrditev lastnikov namestitve; njihov odgovor pričakujemo v roku 12 ur, včasih pa traja tudi do 24 ur. Prosimo, da do prejema dokončne potrditve ne rezervirate ostalih storitev ali letalskih kart.</p>
+            <p>Njihov odgovor pričakujemo v roku 12 ur, včasih pa traja tudi do 24 ur. Prosimo, da do prejema dokončne potrditve ne rezervirate ostalih storitev ali letalskih kart.</p>
+            <p>Končna cena in rezervacija sta potrjeni, ko je plačana akontacija in izdan dokument. Če akontacija ni zahtevana, je rezervacija potrjena ob prejetju potrditvenega e maila.</p>
+            <p>V tem času prosimo še enkrat preglejte podrobnosti svoje rezervacije:</p>
+            <p>{{> booking }}</p>
+            <p>{{> mandatory-to-be-paid }}</p>
+            <p>Hvala za izkazano zaupanje in lep pozdrav,<br/>Team MountVacation</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>{{> signature }}</p>
+      </td>
+    </tr>
+  </table>
+</div>

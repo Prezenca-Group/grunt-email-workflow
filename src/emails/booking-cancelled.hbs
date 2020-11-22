@@ -1,0 +1,41 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.mailgun.com"><img src="../src/img/logo.png" height="30" alt="Mailgun"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      {{> notice type='danger' text='Obveščamo vas, da je bila vaša rezervacija stornirana s strani hotelirja.' }}<br/>
+
+      <table>
+        <tr>
+          <td>
+            <p>Spoštovani / Spoštovana Anže Klančar,</p>
+            <p>obveščamo vas, da je bila vaša rezervacija 1315255 stornirana s strani hotelirja.</p>
+            <p>{{> booking }}</p>
+            <p>Hvala za izkazano zaupanje in lep pozdrav,<br/>Team MountVacation</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>{{> signature }}</p>
+      </td>
+    </tr>
+  </table>
+</div>

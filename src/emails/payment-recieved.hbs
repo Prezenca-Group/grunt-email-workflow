@@ -1,0 +1,41 @@
+---
+layout: default.hbs
+subject: Branded transaction email example
+---
+<span class="preheader">This is preheader text. Some clients will show this text as a preview.</span>
+<div class="header">
+  <table>
+    <tr>
+      <td class="align-center">
+        <a href="http://www.mailgun.com"><img src="../src/img/logo.png" height="30" alt="Mailgun"></a>
+      </td>
+    </tr>
+  </table>
+</div>
+<table class="main">
+  <tr>
+    <td class="wrapper">
+      {{> notice type='success' text='Obveščamo vas, da smo <strong>prejeli vaše nakazilo</strong>.' }}<br/>
+
+      <table>
+        <tr>
+          <td>
+            <p>Spoštovani / Spoštovana Anže Klančar,</p>
+            <p>obveščamo vas, da smo prejeli vaše nakazilo v vrednosti <b>1603.00 EUR</b>, v skladu z načinom odplačevanja, ki ste ga izbrali tekom rezervacije za: Zell am See Appartements Ski Opening, Zell am See - Ski Opening, Ski opening.</p>
+            <p>V priponki je račun s podrobnostmi plačila.</p>
+            <p>Hvala za izkazano zaupanje in lep pozdrav,<br/>Team MountVacation</p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<div class="footer">
+  <table>
+    <tr>
+      <td class="align-center">
+        <p>{{> signature }}</p>
+      </td>
+    </tr>
+  </table>
+</div>
