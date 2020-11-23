@@ -28,12 +28,12 @@ subject: Components Guide
             <!-- BEGIN NOTICES -->
             <h2>Notices</h2>
             <p>
-              <code>&#123;&#123;&gt; notice type='info' text='Your Text Here' &#125;&#125;</code>
+              <code>&#123;&#123;&gt; notice color='blue' text='Your Text Here' &#125;&#125;</code>
             </p>
-            {{> notice type='info' text='Hello, this is a <strong>info</strong> notice.' }}
-            {{> notice type='success' text='Hello, this is a <strong>success</strong> notice.' }}
-            {{> notice type='warning' text='Hello, this is a <strong>warning</strong> notice.' }}
-            {{> notice type='danger' text='Hello, this is a <strong>danger</strong> notice.' }}
+            {{> notice color='blue' text='Hello, this is a <strong>blue</strong> notice.' }}
+            {{> notice color='green' text='Hello, this is a <strong>green</strong> notice.' }}
+            {{> notice color='orange' text='Hello, this is an <strong>orange</strong> notice.' }}
+            {{> notice color='red' text='Hello, this is a <strong>red</strong> notice.' }}
             
             {{> divider }}
             
@@ -42,8 +42,48 @@ subject: Components Guide
             <p>
               <code>&#123;&#123;&gt; button type='primary' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
             </p>
-            {{> button type='primary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (primary)' }}
-            {{> button type='secondary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (secondary)' }}
+            {{> button type='primary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (primary default)' }}
+            
+            <p>
+              <code>&#123;&#123;&gt; button type='secondary' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
+            </p>
+            {{> button type='secondary' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (secondary default)' }}
+
+            {{> divider }}
+
+             <p>
+              <code>&#123;&#123;&gt; button type='primary' color='green' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
+            </p>
+            {{> button type='primary' color='green' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (primary green)' }}
+            
+            <p>
+              <code>&#123;&#123;&gt; button type='secondary' color='green' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
+            </p>
+            {{> button type='secondary' color='green' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (secondary green)' }}
+
+            {{> divider }}
+            
+            <p>
+              <code>&#123;&#123;&gt; button type='primary' color='orange' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
+            </p>
+            {{> button type='primary' color='orange' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (primary orange)' }}
+            
+            <p>
+              <code>&#123;&#123;&gt; button type='secondary' color='orange' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
+            </p>
+            {{> button type='secondary' color='orange' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (secondary orange)' }}
+
+            {{> divider }}
+
+            <p>
+              <code>&#123;&#123;&gt; button type='primary' color='red' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
+            </p>
+            {{> button type='primary' color='red' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (primary red)' }}
+            
+            <p>
+              <code>&#123;&#123;&gt; button type='secondary' color='red' url='Absolute URL' title='Button Text Here' &#125;&#125;</code>
+            </p>
+            {{> button type='secondary' color='red' url='https://github.com/leemunroe/grunt-email-workflow' title='Button (secondary red)' }}
 
             {{> divider }}
 

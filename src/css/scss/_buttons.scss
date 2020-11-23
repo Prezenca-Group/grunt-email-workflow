@@ -35,6 +35,12 @@
   }
 }
 
+// Buttons
+.btn-block table,
+.btn-block a {
+  width: 100% !important;
+}
+
 // Primary call to action button
 .btn-primary {
 
@@ -46,6 +52,42 @@
     background-color: $primary-color;
     border-color: $primary-color;
     color: #ffffff;
+  }
+
+  &.btn-red {
+    table td {
+      background-color: $notice-color-red;
+    }
+  
+    a{
+      background-color: $notice-color-red;
+      border-color: $notice-color-red;
+      color: #ffffff;
+    }
+  }
+  
+  &.btn-orange {
+    table td {
+      background-color: $notice-color-orange;
+    }
+  
+    a{
+      background-color: $notice-color-orange;
+      border-color: $notice-color-orange;
+      color: #ffffff;
+    }
+  }
+  
+  &.btn-green {
+    table td {
+      background-color: $notice-color-green;
+    }
+  
+    a{
+      background-color: $notice-color-green;
+      border-color: $notice-color-green;
+      color: #ffffff;
+    }
   }
 }
 
@@ -60,5 +102,41 @@
     background-color: transparent;
     border-color: $primary-color;
     color: $primary-color;
+  }
+
+  &.btn-red {
+    table td {
+      background-color: transparent;
+    }
+  
+    a{
+      background-color: transparent;
+      border-color: $notice-color-red;
+      color: $notice-color-red;
+    }
+  }
+  
+  &.btn-orange {
+    table td {
+      background-color: transparent;
+    }
+  
+    a{
+      background-color: transparent;
+      border-color: $notice-color-orange;
+      color: $notice-color-orange;
+    }
+  }
+  
+  &.btn-green {
+    table td {
+      background-color: transparent;
+    }
+  
+    a{
+      background-color: transparent;
+      border-color: $notice-color-green;
+      color: $notice-color-green;
+    }
   }
 }

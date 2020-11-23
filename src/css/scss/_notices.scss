@@ -26,20 +26,20 @@
   }
 
   // Color Variations
-  &-info {
-    @include create-notice($notice-color-info);
+  &-blue {
+    @include create-notice($notice-color-blue);
   }
 
-  &-success {
-    @include create-notice($notice-color-success);
+  &-green {
+    @include create-notice($notice-color-green);
   }
 
-  &-warning {
-    @include create-notice($notice-color-warning);
+  &-orange {
+    @include create-notice($notice-color-orange);
   }
 
-  &-danger {
-    @include create-notice($notice-color-danger);
+  &-red {
+    @include create-notice($notice-color-red);
   }
 
   // Size Variations

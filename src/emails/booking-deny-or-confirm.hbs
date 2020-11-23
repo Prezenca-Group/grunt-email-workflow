@@ -15,14 +15,16 @@ subject: Branded transaction email example
 <table class="main">
   <tr>
     <td class="wrapper">
-      {{> notice color='danger' text='Obveščamo vas, da je bila vaša rezervacija stornirana s strani hotelirja.' }}<br/>
-
       <table>
         <tr>
           <td>
-            <p>Spoštovani / Spoštovana Anže Klančar,</p>
-            <p>obveščamo vas, da je bila vaša rezervacija 1315255 stornirana s strani hotelirja.</p>
-            <p>{{> booking }}</p>
+            <p>Spoštovani accommodation provider,</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam facere fugiat minima modi reiciendis nisi ratione at voluptas excepturi. Ab quam placeat atque eos, eligendi inventore voluptas quae alias quia.</p>
+
+            {{> button type='primary' color='red' url='https://github.com/leemunroe/grunt-email-workflow' title='Zavrni rezervacijo' }}
+            {{> button type='primary' color='green' url='https://github.com/leemunroe/grunt-email-workflow' title='Potrdi rezervacijo' }}
+            
+            <p>Hvala za razumevanje.</p>
             <p>Hvala za izkazano zaupanje in lep pozdrav,<br/>Team MountVacation</p>
           </td>
         </tr>
